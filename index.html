@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Buzzed</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Hind:wght@300&family=Mitr:wght@600&display=swap" 
+        rel="stylesheet">
+</head>
+<body>
+    <!-- header section starts -->
+    <nav class="relative mx-auto px-5 py-3">
+        <div class="flex items-center justify-between">
+            <a class="pt-2 text-4xl font-cookie" href="#home">
+                <img src="./images/1526067169.svg" alt="Logo" width="40" height="40" 
+                 class="inline-block pb-4 pr-1 lg:pb-3">
+                Sugar Buzzed
+            </a>
+
+            <div class="hidden space-x-6 text-2xl text-richBrown md:flex">
+                <a class="hover:text-brightRed" href="#home">Home</a>
+                <a class="hover:text-brightRed" href="#about">About</a>
+                <a class="hover:text-brightRed" href="#flavors">Flavors</a>
+                <a class="hover:text-brightRed" href="#contact">Contact</a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" aria-controls="menu" 
+            aria-expanded="false" aria-label="toggle navigation"
+            class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center text-2xl text-richBrown hidden self-end py-8 mt-8 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a class="hover:text-brightRed" href="#home">Home</a>
+                <a class="hover:text-brightRed" href="#about">About</a>
+                <a class="hover:text-brightRed" href="#flavors">Flavors</a>
+                <a class="hover:text-brightRed" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- header section ends -->
+
+    <!-- hero section starts -->
+    <section class="py-56" id="home">
+        <div class="items-center justify-around">
+        
+            <div class="text-center text-white md:text-left  md:pl-16 lg:pl-28">
+                <h1 class="max-w-md mx-auto text-5xl font-mitr mb-6 md:mx-0 md:text-5xl">
+                    Believe the Buzz
+                </h1>
+                
+                <p class="max-w-sm mx-auto text-2xl mb-6 md:mx-0 lg:max-w-lg">
+                    I'm a custom cake creator operating out of Nashville, TN. 
+                    I specialize in bringing your imagination to life -- with fondant or buttercream!
+                </p>
+
+                <a href="#contact" class="p-3 px-6 pt-2 text-xl bg-royalPurple rounded-full baseline hover:bg-lightPurple">
+                    Contact Me!
+                </a>
+            </div>
+                
+        </div>
+    </section>
+    <!-- hero section ends -->
+
+    <!-- about section starts -->
+    <section class="px-8 py-10" id="about">
+        <div class="container items-center justify-around mx-auto xl:flex">
+            
+            <video class="w-100 mx-auto pb-2" autoplay loop muted>
+                <source src="./images/cake.mp4" type="video/mp4" />
+            </video>
+    
+            <div class="max-w-screen-md lg:mx-auto xl:mx-0">
+                <h2 class="font-cookie text-4xl text-brightRed py-3">About Sugar Buzzed</h2>
+                <p class="text-2xl">
+                    From birthdays, holidays, and every other special event throughout the year, 
+                    I've got you covered for every occasion. Let's make all of those memories in your life extra special. 
+                    The possibilities are endless!
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- flavor section starts -->
+    <section class="bg-lightPurple px-8 py-10" id="flavors">
+        <div class="mx-auto max-w-screen-sm lg:flex lg:container xl:px-44">
+            <div class="text-2xl text-white lg:mx-auto lg:pt-20">
+                <h2 class="font-cookie text-5xl text-center text-offWhite pb-4">What's Your Flavor?</h2>
+
+                <div class="w-3/5 lg:w-4/5">
+                    <h3 class="font-mitr text-3xl text-richBrown">Cake:</h3>
+                    <ul>
+                        <li>Classic Vanilla**</li>
+                        <li>French Vanilla</li>
+                        <li>Classic Chocolate**</li>
+                        <li>German Chocolate</li>
+                        <li>Angel Food Cake</li>
+                        <li>Devil's Food Cake</li>
+                        <li>Butter Cake</li>
+                        <li>Red Velvet</li>
+                        <li>Strawberry</li>
+                        <li>Pineapple</li>
+                        <li>Lemon</li>
+                        <li>Confetti</li>
+                    </ul>
+                </div>
+     
+                <div class="text-right -mt-64">
+                    <h3 class="font-mitr text-3xl text-richBrown">Icing:</h3>
+                    <ul>
+                        <li>Vanilla</li>
+                        <li>Chocolate</li>
+                        <li>Dark Chocolate</li>
+                        <li>Buttercream</li>
+                        <li>*German Chocolate</li>
+                        <li>Strawberry</li>
+                        <li>Lemon</li>
+                    </ul>
+                </div>
+
+                <p class="text-xl pt-8">**also available as Gluten Free options.<br>
+                 *Contains Coconut and Pecans.
+                </p>
+            </div>
+
+            <img src="./images/flavor-cake.jpg" alt="White cake with purple flowers"
+            class="hidden mx-auto rounded-lg lg:flex lg:flex-col lg:max-w-lg ">
+
+        </div>
+    </section>
+    <!-- flavor section ends -->
+
+    <!-- contact section starts -->
+    <section class="bg-offWhite px-8 py-10" id="contact">
+        <div class="text-center md:space-y-0">
+
+            <h3 class="font-mitr text-4xl text-richBrown">Need to Reach Me?</h3>
+            <p class="text-xl">Thank you for checking out my site.<br>
+                Now, let's get down to business and make some dreams come true.
+            </p>
+
+            <div class="md:flex md:flex-row md:justify-around lg:container lg:px-44 lg:mx-auto">
+                <div class="text-2xl md:flex-col">
+                    <div class="pt-5">
+                        <i class="fas fa-map text-xl text-white bg-brightRed p-3 rounded-xl" aria-hidden="true"></i>
+                        <p class="mt-2">110 Drury Lane</p>
+                    </div>
+        
+                    <div class="pt-5">
+                        <i class="fas fa-envelope text-xl text-white bg-brightRed p-3 rounded-xl" aria-hidden="true"></i>
+                        <p class="mt-2">sugarbuzzed@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="text-2xl md:flex-col">
+                    <div class="pt-5">
+                        <i class="fas fa-phone text-xl text-white bg-brightRed p-3 rounded-xl" aria-hidden="true"></i>
+                        <p class="mt-2">(629) 926-6926</p>
+                    </div>
+
+                    <div class="pt-5">
+                        <i class="fa-brands fa-facebook text-xl text-white bg-royalPurple p-3 rounded-xl" aria-hidden="true"></i>
+                        <p class="mt-2">Follow Me on Facebook!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends -->
+    
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
